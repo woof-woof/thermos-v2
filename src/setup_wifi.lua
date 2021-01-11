@@ -12,8 +12,10 @@ wifi.setmode(wifi.STATION)
 wifi.sta.config({ssid=WIFI_SSID, pwd=WIFI_PASSWORD})
 
 -- Static IP, connects faster
--- wifi.sta.setip({
---     ip = NET_IP,
---     netmask = NET_MASK,
---     gateway = NET_GATEWAY
--- })
+if (NET_IP) then
+  wifi.sta.setip({
+      ip = NET_IP,
+      netmask = NET_MASK,
+      gateway = NET_GATEWAY
+  })
+end

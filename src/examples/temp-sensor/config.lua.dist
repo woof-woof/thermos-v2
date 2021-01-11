@@ -3,6 +3,7 @@ DHT_PIN = 12
 
 -- power
 SLEEP_SECONDS=600
+SENSOR_ID="my-room"
 
 -- connection
 WIFI_SSID = "Some"

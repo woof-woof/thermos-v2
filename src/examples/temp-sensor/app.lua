@@ -22,5 +22,5 @@ status, temp, humi, temp_dec, humi_dec = dht.read(DHT_PIN)
 print ('[got temp:', temp, ' humi:', humi, ']')
 
 -- TODO add retry
-body = sjson.encode({temp=temp, humi=humi})
+body = sjson.encode({id=SENSOR_ID, temp=temp, humi=humi})
 http.post(SERVER_ADDR, headers, body, callback)

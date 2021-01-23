@@ -1,11 +1,19 @@
 -- dht
-DHT_PIN = 12
+DHT_POWER_PIN = 2
+DHT_READ_PIN = 1
 
 -- power
-SLEEP_SECONDS=600
-SENSOR_ID="my-room"
+SLEEP_SECONDS = 600
+ADC_READER_POWER_PIN = 7
 
 -- connection
-WIFI_SSID = "Some"
+WIFI_SSID = "some"
 WIFI_PASSWORD = "pass"
-SERVER_ADDR = "http://192.168.0.105:3000/reading"
+NET_IP = "192.168.0.66"
+NET_MASK = "255.255.255.0"
+NET_GATEWAY = "192.168.0.1"
+
+SERVER_ADDR = "http://192.168.0.64:3000/api/sensor"
+SENSOR_ID = "sensory"
+
+
